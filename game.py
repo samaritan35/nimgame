@@ -120,8 +120,7 @@ if __name__ == '__main__':
         data[player2] = score_player_2
         with open('save.json', 'w') as jsonFile:
             json.dump(data, jsonFile)
-    
-    data = sorted(data, data.keys)
+   
     for k,v in data.items():
         print("Les scores--")
         print(k, " : ", data[k])
